@@ -1,4 +1,4 @@
-import { PropsWithRequiredChildren } from '../../types';
+import { PropsWithRequiredChildren } from '../../constants/Types';
 import { TextTitle, TextSubtitle, TextDetail } from '../Texts/Texts';
 import './Post.css';
 

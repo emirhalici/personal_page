@@ -1,4 +1,4 @@
-import { PropsWithRequiredChildren } from '../../types';
+import { PropsWithRequiredChildren } from '../../constants/Types';
 import './Card.css';
 
 export default function Card(props: PropsWithRequiredChildren) {

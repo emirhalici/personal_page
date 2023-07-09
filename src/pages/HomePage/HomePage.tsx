@@ -1,5 +1,5 @@
 import './HomePage.css';
 
 export default function HomePage() {
-  return <div></div>;
+  return <div>Hello world!</div>;
 }

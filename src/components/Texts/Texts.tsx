@@ -1,4 +1,4 @@
-import { PropsWithRequiredChildren } from '../../types';
+import { PropsWithRequiredChildren } from '../../constants/Types';
 import './Texts.css';
 
 function TextTitle(props: PropsWithRequiredChildren) {
