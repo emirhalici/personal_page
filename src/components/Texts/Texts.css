@@ -1,0 +1,22 @@
+.text-title {
+  font-size: 24pt;
+  font-weight: 600;
+  color: rgb(250, 250, 250);
+  line-height: normal;
+}
+
+.text-subtitle {
+  font-size: 18pt;
+  color: rgb(161, 161, 170);
+  line-height: normal;
+}
+
+.text-detail {
+  color: rgba(161, 161, 170, 0.6);
+  line-height: normal;
+}
+
+.text-bold {
+  font-weight: 800;
+  line-height: normal;
+}

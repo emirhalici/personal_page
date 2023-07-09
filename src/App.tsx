@@ -1,7 +1,10 @@
-import Hello from '~/components/Hello';
+import PostsPage from './pages/PostsPage/PostsPage';
 
-function App() {
-  return <Hello />;
+export default function App() {
+  return (
+    <div className='app'>
+      <header className='app-header'>Header</header>
+      <PostsPage />
+    </div>
+  );
 }
-
-export default App;
