@@ -13,6 +13,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #18181b;
   color: #d5ccc7;
+  font-size: 12pt;
+  line-height: 20pt;
 }
 
 p {
@@ -22,6 +24,30 @@ p {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  font-weight: 600;
+  transition: background-color 100ms, color 200ms;
+}
+
+a:link {
+  color: rgb(150, 162, 207);
+}
+
+a:visited {
+  color: rgb(188, 194, 216);
+}
+
+a:hover {
+  color: rgb(54, 54, 54);
+  background-color: rgba(255, 255, 255, 0.779);
+}
+
+a:active {
+  color: rgb(77, 77, 77);
+  background-color: rgba(255, 255, 255, 0.779);
+  font-weight: 800;
 }
 
 .app-root {

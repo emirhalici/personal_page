@@ -1,5 +1,7 @@
 import { TextSubtitle, TextTitle } from '~/components/Texts/Texts';
 import './HomePage.css';
+import { Link } from 'react-router-dom';
+import { routeNames } from '~/constants/RouteNames';
 
 export default function HomePage() {
   return (
@@ -10,7 +12,8 @@ export default function HomePage() {
       </TextSubtitle>
       <p>
         I am currently remotely freelancing and working on receiving my bachelor&apos;s (3/4) in{' '}
-        <b>Ankara</b>. Check out my work and socials down below!
+        <b>Ankara</b>. Check out more socials down below or more learn more about me{' '}
+        <Link to={routeNames.about.path}> here</Link>!
       </p>
     </div>
   );
