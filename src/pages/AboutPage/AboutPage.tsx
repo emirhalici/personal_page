@@ -1,5 +1,6 @@
 import { TextSubtitle, TextTitle } from '~/components/Texts/Texts';
 import './AboutPage.css';
+import SocialLinks from '~/components/SocialLinks/SocialLinks';
 
 export default function AboutPage() {
   const emailLink = 'mailto:emir.halici1@gmail.com';
@@ -38,7 +39,8 @@ export default function AboutPage() {
         Feel free to contact me via my primary <a href={emailLink}>email account</a> for work
         related topics or just to have a chat.
       </p>
-      <EmptySpace height={60}></EmptySpace>
+      <SocialLinks />
+      <EmptySpace height={60} />
     </div>
   );
 }

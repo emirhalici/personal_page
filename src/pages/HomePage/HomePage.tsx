@@ -2,6 +2,7 @@ import { TextSubtitle, TextTitle } from '~/components/Texts/Texts';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { routeNames } from '~/constants/RouteNames';
+import SocialLinks from '~/components/SocialLinks/SocialLinks';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <b>Ankara</b>. Check out more socials down below or more learn more about me{' '}
         <Link to={routeNames.about.path}> here</Link>!
       </p>
+      <SocialLinks />
     </div>
   );
 }
