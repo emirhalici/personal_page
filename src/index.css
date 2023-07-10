@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto 32px;
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

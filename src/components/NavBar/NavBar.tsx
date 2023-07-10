@@ -18,7 +18,7 @@ export default function NavBar() {
   });
 
   return (
-    <nav className='navbar'>
+    <nav className='page-fixed-width-root navbar'>
       <ul className='navbar_list'>{links}</ul>
     </nav>
   );
