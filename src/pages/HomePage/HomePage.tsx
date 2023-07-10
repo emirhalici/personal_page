@@ -11,7 +11,7 @@ export default function HomePage() {
         I am a software developer based in <b>Türkiye</b>.
       </TextSubtitle>
       <p>
-        I am currently remotely freelancing and working on receiving my bachelor&apos;s (3/4) in{' '}
+        I am currently remotely freelancing and working on receiving my bachelor&apos;s (4/4) in{' '}
         <b>Ankara</b>. Check out more socials down below or more learn more about me{' '}
         <Link to={routeNames.about.path}> here</Link>!
       </p>
