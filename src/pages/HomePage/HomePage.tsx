@@ -13,7 +13,7 @@ export default function HomePage() {
       </TextSubtitle>
       <p>
         I am currently remotely freelancing and working on receiving my bachelor&apos;s (4/4) in{' '}
-        <b>Ankara</b>. Check out more socials down below or more learn more about me{' '}
+        <b>Ankara</b>. Check out my socials down below or more learn more about me{' '}
         <Link to={routeNames.about.path}> here</Link>!
       </p>
       <SocialLinks />

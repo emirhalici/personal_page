@@ -31,7 +31,7 @@ export default function AboutPage() {
       <TextSubtitle>Education</TextSubtitle>
       <p>
         I am pursuing my degree in <b>Computer Engineering</b> in my forth and last year at Ankara
-        University. Current GPA is <code>3.56</code> and I am set to graduate in 2024/2025
+        University. Current GPA is <code>3.56</code> and I am set to graduate in 2023/2024
         (expected).
       </p>
       <TextSubtitle>Contact</TextSubtitle>
