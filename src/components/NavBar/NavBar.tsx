@@ -1,21 +1,25 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
-import routeNames from '~/constants/RouteNames';
+import { allRoutes } from '~/constants/RouteNames';
 
 export default function NavBar() {
+  const activePath = useLocation().pathname;
+
+  const links = allRoutes.map((r) => {
+    const isActive = r.path === activePath;
+
+    return (
+      <li key={r.path}>
+        <Link to={r.path} className={isActive ? 'active-link' : undefined}>
+          {r.name}
+        </Link>
+      </li>
+    );
+  });
+
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to={routeNames.root}>Home</Link>
-        </li>
-        <li>
-          <Link to={routeNames.about}>About</Link>
-        </li>
-        <li>
-          <Link to={routeNames.posts}>Blog Posts</Link>
-        </li>
-      </ul>
+    <nav className='navbar'>
+      <ul className='navbar_list'>{links}</ul>
     </nav>
   );
 }

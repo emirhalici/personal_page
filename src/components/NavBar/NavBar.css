@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900;1000&display=swap');
+
+nav {
+  font-family: 'Recursive', sans-serif;
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 32px 0px;
+}
+
+.navbar_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.navbar_list li {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  margin-bottom: 8px;
+}
+
+.navbar_list li a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 13pt;
+  background-color: transparent;
+  color: #c6c6c6;
+  font-weight: 400;
+  transition: background-color 100ms;
+}
+
+.navbar_list li a.active-link {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #e0e1dd;
+}
+
+.navbar_list li a:hover {
+  background-color: #333333;
+  color: #e0e1dd;
+  font-weight: 500;
+}
+
+.navbar_list li a:active {
+  color: #e0e1dd;
+  font-weight: 800;
+}
