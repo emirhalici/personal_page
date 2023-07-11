@@ -7,7 +7,7 @@
   margin-right: 16px;
   background-color: #30303b;
   color: #b6c5ce;
-  border-radius: 25%;
+  border-radius: 40%;
   padding: 12px;
   display: flex;
   align-items: center;
@@ -27,5 +27,5 @@
 .social-icon:hover {
   background-color: #93bad3;
   color: #30303b;
-  border-radius: 40%;
+  border-radius: 25%;
 }
