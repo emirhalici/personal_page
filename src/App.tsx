@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import NoPage from './pages/NoPage/NoPage';
 import { routeNames } from './constants/RouteNames';
 import Footer from './components/Footer/Footer';
+import LinksPage from './pages/LinksPage/LinksPage';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path={routeNames.root.path} element={<HomePage />} />
           <Route path={routeNames.posts.path} element={<PostsPage />} />
           <Route path={routeNames.about.path} element={<AboutPage />} />
+          <Route path={routeNames.links.path} element={<LinksPage />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
       </div>
