@@ -1,6 +1,6 @@
-import { minecraftMusic } from './LinkTypes';
 import './LinksPage.css';
 import { LinkSectionPost } from './Components/LinkSection/LinkSection';
+import { linksContent } from './LinkTypes';
 
 export default function LinksPage() {
   return (
@@ -9,7 +9,9 @@ export default function LinksPage() {
         I am curating things I find interesting or find together here. Whether it be about code,
         computer science, music, games or just any random video, here it is...
       </p>
-      <LinkSectionPost section={minecraftMusic} />
+      {linksContent.map((section, index) => (
+        <LinkSectionPost key={index} section={section} />
+      ))}
     </div>
   );
 }

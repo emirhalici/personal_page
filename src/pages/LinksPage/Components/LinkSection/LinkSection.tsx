@@ -21,7 +21,6 @@ export function LinkSectionPost(props: { section: LinkSection }) {
       {links.map((link, index) => (
         <LinkPost key={link.url} model={link} addDivider={index != lastIndex} />
       ))}
-      {<div className='circle-divider'></div>}
     </div>
   );
 }
