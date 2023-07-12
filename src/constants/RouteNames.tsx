@@ -3,16 +3,18 @@ type Route = {
   name: string;
 };
 
-const rootRoute: Route = { path: '/', name: 'Home' };
-const postsRoute: Route = { path: '/posts', name: 'Posts' };
+const rootRoute = { path: '/', name: 'Home' };
+const postsRoute = { path: '/posts', name: 'Posts' };
 const aboutRoute = { path: '/about', name: 'About' };
+const linksRoute = { path: '/links', name: 'Links' };
 
 const routeNames = {
   root: rootRoute,
   posts: postsRoute,
   about: aboutRoute,
+  links: linksRoute,
 };
 
-const allRoutes: Route[] = [rootRoute, postsRoute, aboutRoute];
+const allRoutes: Route[] = [rootRoute, postsRoute, aboutRoute, linksRoute];
 
 export { routeNames, allRoutes };
