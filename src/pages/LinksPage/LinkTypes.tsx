@@ -1,3 +1,5 @@
+type NonEmptyArray<T> = [T, ...T[]];
+
 type LinkModel = {
   url: string;
   title: string;
@@ -5,7 +7,7 @@ type LinkModel = {
 };
 
 type LinkSection = {
-  links: LinkModel[];
+  links: NonEmptyArray<LinkModel>;
   title: string;
   image?: {
     url: string;
@@ -66,7 +68,18 @@ const codeSection: LinkSection = {
   ],
 };
 
-const linksContent = [flutterSection, codeSection, minecraftMusicSection];
+const arcitlesToBeRead: LinkSection = {
+  title: 'Arcticles To Be Read',
+  links: [
+    {
+      title: 'Evolution of the Repository Pattern',
+      url: 'http://hannesdorfmann.com/android/evolution-of-the-repository-pattern/',
+      timestamp: 1689605784740,
+    },
+  ],
+};
+
+const linksContent = [flutterSection, codeSection, minecraftMusicSection, arcitlesToBeRead];
 
 export type { LinkModel, LinkSection };
 export { linksContent };
