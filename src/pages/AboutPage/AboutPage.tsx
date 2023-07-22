@@ -36,8 +36,11 @@ export default function AboutPage() {
       </p>
       <TextSubtitle>Contact</TextSubtitle>
       <p>
-        Feel free to contact me via my primary <a href={emailLink}>email account</a> for work
-        related topics or just to have a chat.
+        Feel free to contact me via my primary{' '}
+        <a href={emailLink} target='_blank' rel='noopener noreferrer'>
+          email account
+        </a>{' '}
+        for work related topics or just to have a chat.
       </p>
       <SocialLinks />
       <EmptySpace height={60} />
