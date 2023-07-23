@@ -5,7 +5,7 @@ import './LinkPost.css';
 export default function LinkPost({ model, addDivider }: { model: LinkModel; addDivider: boolean }) {
   return (
     <div>
-      <a className='link-url-line' href={model.url}>
+      <a className='link-url-line' href={model.url} target='_blank' rel='noopener noreferrer'>
         {model.title}
       </a>
       <p className='link-detail-line'>
