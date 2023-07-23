@@ -1,4 +1,47 @@
 body.dark-mode {
-  --color-background: #18181b;
-  --color-foreground: #d5ccc7;
+  --background: rgb(24, 24, 27);
+  --accent-foreground: rgb(188, 194, 216);
+  --accent-background: rgb(48, 48, 59);
+
+  --text-title: rgb(250, 250, 250);
+  --text-subtitle: hsl(227, 5%, 65%);
+  --text-detail: hsla(227, 5%, 65%, 0.6);
+  --text-p: hsl(23, 13%, 81%);
+
+  --card-background: rgba(255, 255, 255, 0.1);
+  --footer-foreground: hsl(0, 0%, 40%);
+  --quote-foreground: hsl(0, 0%, 75%);
+  --divider-background: var(--card-background);
+
+  --code-background: var(--accent-background);
+  --code-foreground: var(--accent-foreground);
+
+  --nav-selected-background: rgba(255, 255, 255, 0.04);
+  --nav-selected-foreground: hsl(75, 6%, 87%);
+  --nav-unselected-background: transparent;
+  --nav-unselected-foreground: hsl(0, 0%, 78%);
+  --nav-hover-background: hsl(0, 0%, 20%);
+  --nav-hover-foreground: hsl(75, 6%, 87%);
+  --nav-active-foreground: var(--nav-unselected-foreground);
+
+  --text-selection-background: rgb(54, 54, 54);
+  --text-selection-foreground: rgba(255, 255, 255, 0.779);
+
+  --text-link-url: hsl(227, 58%, 91%);
+  --text-link-url-hover: hsl(228, 16%, 70%);
+  --text-link-url-active: var(--text-link-url);
+
+  --social-background: var(--accent-background);
+  --social-foreground: var(--accent-foreground);
+  --social-shadow: transparent;
+
+  --anchor-unvisited-background: transparent;
+  --anchor-unvisited-foreground: var(--accent-foreground);
+  --anchor-visited-background: transparent;
+  --anchor-visited-foreground: hsl(227, 10%, 65%);
+
+  --anchor-hover-background: var(--accent-foreground);
+  --anchor-hover-foreground: var(--accent-background);
+  --anchor-active-background: var(--accent-foreground);
+  --anchor-active-foreground: var(--accent-background);
 }

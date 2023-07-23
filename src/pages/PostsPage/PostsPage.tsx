@@ -1,5 +1,4 @@
 import { TextTitle } from '~/components/Texts/Texts';
-import './PostsPage.css';
 
 export default function PostsPage() {
   return (
