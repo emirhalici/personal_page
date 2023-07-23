@@ -44,7 +44,7 @@ const invincibleS2: MediaPostData = {
 };
 
 const witcherS3: MediaPostData = {
-  title: 'The Witcher',
+  title: 'The Witcher S3',
   releaseYear: 2023,
   url: 'https://www.imdb.com/title/tt5180504/',
   ratingOutOfFive: undefined,
@@ -52,7 +52,7 @@ const witcherS3: MediaPostData = {
 };
 
 const blackMirrorS6: MediaPostData = {
-  title: 'Black Mirror',
+  title: 'Black Mirror S6',
   releaseYear: 2023,
   url: 'https://www.imdb.com/title/tt2085059/',
   ratingOutOfFive: undefined,
@@ -60,7 +60,7 @@ const blackMirrorS6: MediaPostData = {
 };
 
 const theBearS2: MediaPostData = {
-  title: 'The Bear',
+  title: 'The Bear S2',
   releaseYear: 2023,
   content:
     'An amazing show that even attracted people like me who have nothing to do with cooking or being a chef. Looking very forward to watching it when it comes out.',
