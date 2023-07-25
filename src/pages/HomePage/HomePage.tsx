@@ -1,5 +1,4 @@
 import { TextSubtitle, TextTitle } from '~/components/Texts/Texts';
-import './HomePage.css';
 import { Link } from 'react-router-dom';
 import { routeNames } from '~/constants/RouteNames';
 import SocialLinks from '~/components/SocialLinks/SocialLinks';

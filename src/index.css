@@ -11,8 +11,8 @@ body {
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #18181b;
-  color: #d5ccc7;
+  background-color: var(--background);
+  color: var(--text-p);
   font-size: 12pt;
   line-height: 20pt;
 }
@@ -20,47 +20,11 @@ body {
 p {
   font-size: 12pt;
   line-height: 20pt;
+  color: var(--text-p);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-a {
-  font-weight: 600;
-  transition: background-color 100ms, color 200ms;
-}
-
-a:link {
-  color: rgb(150, 162, 207);
-}
-
-a:visited {
-  color: rgb(188, 194, 216);
-}
-
-a:hover {
-  color: rgb(54, 54, 54);
-  background-color: rgba(255, 255, 255, 0.779);
-}
-
-a:active {
-  color: rgb(77, 77, 77);
-  background-color: rgba(255, 255, 255, 0.779);
-  font-weight: 800;
-}
-
-::-moz-selection {
-  color: rgb(54, 54, 54);
-  background-color: rgba(255, 255, 255, 0.779);
-}
-::-webkit-selection {
-  color: rgb(54, 54, 54);
-  background-color: rgba(255, 255, 255, 0.779);
-}
-::selection {
-  color: rgb(54, 54, 54);
-  background-color: rgba(255, 255, 255, 0.779);
 }
 
 .app-root {
@@ -80,6 +44,13 @@ a:active {
   justify-content: center;
 }
 
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .margin-vertical-medium {
   padding: 16px 0px;
 }
@@ -88,4 +59,48 @@ a:active {
   width: 600px;
   max-width: 100%;
   margin: auto;
+}
+
+a {
+  font-weight: 600;
+  transition: background-color 100ms, color 200ms;
+  color: var(--anchor-unvisited-foreground);
+  background-color: var(--anchor-unvisited-background);
+}
+
+/* unvisited anchor */
+a:link {
+  color: var(--anchor-unvisited-foreground);
+  background-color: var(--anchor-unvisited-background);
+}
+
+/* visited anchor */
+a:visited {
+  color: var(--anchor-visited-foreground);
+  background-color: var(--anchor-visited-background);
+}
+
+a:hover {
+  color: var(--anchor-hover-foreground);
+  background-color: var(--anchor-hover-background);
+}
+
+a:active {
+  color: var(--anchor-active-foreground);
+  background-color: var(--anchor-active-background);
+  font-weight: 800;
+}
+
+/* Text selection */
+::-moz-selection {
+  color: var(--text-selection-background);
+  background-color: var(--text-selection-foreground);
+}
+::-webkit-selection {
+  color: var(--text-selection-background);
+  background-color: var(--text-selection-foreground);
+}
+::selection {
+  color: var(--text-selection-background);
+  background-color: var(--text-selection-foreground);
 }

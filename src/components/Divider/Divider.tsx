@@ -1,6 +1,6 @@
 export default function Divider() {
   const height = 4;
-  const color = 'rgba(255, 255, 255, 0.1)';
+  const color = '--var(--divider-background)';
 
   const circle = {
     width: height,
