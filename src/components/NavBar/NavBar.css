@@ -28,24 +28,24 @@ nav {
   border-radius: 16px;
   text-decoration: none;
   font-size: 13pt;
-  background-color: transparent;
-  color: #c6c6c6;
+  background-color: var(--nav-unselected-background);
+  color: var(--nav-unselected-foreground);
   font-weight: 400;
   transition: background-color 100ms;
 }
 
 .navbar_list li a.active-link {
-  background-color: rgba(255, 255, 255, 0.04);
-  color: #e0e1dd;
+  background-color: var(--nav-selected-background);
+  color: var(--nav-selected-foreground);
 }
 
 .navbar_list li a:hover {
-  background-color: #333333;
-  color: #e0e1dd;
+  background-color: var(--nav-hover-background);
+  color: var(--nav-hover-foreground);
   font-weight: 500;
 }
 
 .navbar_list li a:active {
-  color: #e0e1dd;
+  color: var(--nav-active-foreground);
   font-weight: 800;
 }

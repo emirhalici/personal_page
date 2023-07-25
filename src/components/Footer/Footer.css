@@ -2,11 +2,11 @@
   text-align: center;
   font-family: 'Recursive', sans-serif;
   font-weight: 400;
-  color: hsl(0, 0%, 40%);
+  color: var(--footer-foreground);
 }
 
 .quote {
   font-weight: 600;
-  color: hsl(0, 0%, 75%);
+  color: var(--quote-foreground);
   font-size: 12pt;
 }

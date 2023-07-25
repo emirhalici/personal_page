@@ -1,9 +1,30 @@
-:root {
-  --url-link-color: rgb(217, 223, 245);
-  --url-link-hover-color: rgb(166, 171, 191);
-}
-
 .link-detail-line {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.link-url-line {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-link-url);
+  transition: color 200ms;
+}
+
+/* unvisited */
+.link-url-line:link {
+  color: var(--text-link-url);
+}
+
+.link-url-line:visited {
+  color: var(--text-link-url);
+}
+
+.link-url-line:hover {
+  color: var(--text-link-url-hover);
+  background-color: transparent;
+}
+
+.link-url-line:active {
+  font-weight: 600;
+  color: var(--text-link-url-active);
 }
