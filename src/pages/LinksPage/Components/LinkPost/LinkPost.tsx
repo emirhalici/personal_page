@@ -1,3 +1,4 @@
+import AnchorVariant from '~/components/AnchorVariant/AnchorVariant';
 import { LinkModel } from '../../LinkTypes';
 import LinkDivider from '../LinkDivider/LinkDivider';
 import './LinkPost.css';
@@ -5,9 +6,9 @@ import './LinkPost.css';
 export default function LinkPost({ model, addDivider }: { model: LinkModel; addDivider: boolean }) {
   return (
     <div>
-      <a className='link-url-line' href={model.url} target='_blank' rel='noopener noreferrer'>
+      <AnchorVariant href={model.url} openInNewTab={true}>
         {model.title}
-      </a>
+      </AnchorVariant>
       <p className='link-detail-line'>
         {shortUrl(model.url)} • {readableTime(model.timestamp)}
       </p>
@@ -17,11 +18,15 @@ export default function LinkPost({ model, addDivider }: { model: LinkModel; addD
 }
 
 function shortUrl(url: string): string {
-  const worldWideWebPattern = new RegExp('^w+\\d*\\.', 'gim');
-  const hostname = new URL(url).hostname;
-  const urlShort = hostname.replace(worldWideWebPattern, '');
+  try {
+    const worldWideWebPattern = new RegExp('^w+\\d*\\.', 'gim');
+    const hostname = new URL(url).hostname;
+    const urlShort = hostname.replace(worldWideWebPattern, '');
 
-  return urlShort;
+    return urlShort;
+  } catch (e) {
+    return url;
+  }
 }
 
 function readableTime(timestamp: number): string {
