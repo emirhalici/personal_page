@@ -1,6 +1,6 @@
-## Personal static web page built with React, Vite, Typescript, ESLint...
+## Personal static web page
 
-This react app is for my personal web page.
+An open source static personal page. This project has CI/CD setup from Vercel for automatic previews and automatic deployment. For better DX the project has strict Typescript & ESLint rules.
 
 ## Using
 
