@@ -28,7 +28,7 @@ export default function App() {
             <Route path={routeNames.posts.path} element={<PostsPage />} />
             <Route path={routeNames.about.path} element={<AboutPage />} />
             <Route path={routeNames.links.path} element={<LinksPage />} />
-            <Route path={routeNames.media.path} element={<MediaPage />} />
+            {/* <Route path={routeNames.media.path} element={<MediaPage />} /> */}
             <Route path='*' element={<NoPage />} />
           </Routes>
         </div>
