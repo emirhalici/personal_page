@@ -7,7 +7,6 @@ import NoPage from './pages/NoPage/NoPage';
 import { routeNames } from './constants/RouteNames';
 import Footer from './components/Footer/Footer';
 import LinksPage from './pages/LinksPage/LinksPage';
-import MediaPage from './pages/MediaPage/MediaPage';
 import { ThemeContextProvider } from './theme/ThemeContext';
 import { useThemeState } from './theme/useTheme';
 
