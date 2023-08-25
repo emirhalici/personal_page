@@ -16,6 +16,12 @@ export default function NavBar() {
     );
   });
 
+  links.push(
+    <NavButton path={'https://dartdateformatter.vercel.app/'} isActive={false} openInNewTab={true}>
+      Dart Date Formatter
+    </NavButton>,
+  );
+
   return (
     <nav className='page-fixed-width-root navbar'>
       <ul className='navbar_list'>{links}</ul>
