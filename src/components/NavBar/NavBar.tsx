@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 import { allRoutes } from '~/constants/RouteNames';
+import { PropsWithChildren } from 'react';
 
 export default function NavBar() {
   const activePath = useLocation().pathname;
@@ -9,17 +10,45 @@ export default function NavBar() {
     const isActive = r.path === activePath;
 
     return (
-      <li key={r.path}>
-        <Link to={r.path} className={isActive ? 'active-link' : undefined}>
-          {r.name}
-        </Link>
-      </li>
+      <NavButton path={r.path} isActive={isActive} openInNewTab={false} key={r.path}>
+        {r.name}
+      </NavButton>
     );
   });
+
+  links.push(
+    <NavButton path={'https://dartdateformatter.vercel.app/'} isActive={false} openInNewTab={true}>
+      Dart Date Formatter
+    </NavButton>,
+  );
 
   return (
     <nav className='page-fixed-width-root navbar'>
       <ul className='navbar_list'>{links}</ul>
     </nav>
+  );
+}
+type NavButtonProps = {
+  path: string;
+  isActive: boolean;
+  openInNewTab: boolean;
+};
+function NavButton({
+  path,
+  isActive,
+  openInNewTab,
+  children,
+}: NavButtonProps & PropsWithChildren<NavButtonProps>) {
+  return (
+    <li>
+      <Link
+        to={path}
+        className={isActive ? 'active-link' : undefined}
+        target={openInNewTab ? '_blank' : undefined}
+        rel={openInNewTab ? 'noopener noreferrer' : undefined}
+      >
+        {children}
+      </Link>
+    </li>
   );
 }
