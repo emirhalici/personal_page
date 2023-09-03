@@ -23,11 +23,14 @@ export default function NavBar() {
   );
 
   return (
-    <nav className='page-fixed-width-root navbar'>
-      <ul className='navbar_list'>{links}</ul>
-    </nav>
+    <div className='row-flex margin-vertical-high'>
+      <nav className='page-fixed-width-root'>
+        <ul className='navbar_list'>{links}</ul>
+      </nav>
+    </div>
   );
 }
+
 type NavButtonProps = {
   path: string;
   isActive: boolean;

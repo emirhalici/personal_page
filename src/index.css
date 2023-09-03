@@ -55,6 +55,10 @@ code {
   padding: 16px 0px;
 }
 
+.margin-vertical-high {
+  padding: 16px 0px;
+}
+
 .page-fixed-width-root {
   width: 600px;
   max-width: 100%;
