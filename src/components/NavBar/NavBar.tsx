@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 import { allRoutes } from '~/constants/RouteNames';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { PropsWithChildren } from 'react';
 
 export default function NavBar() {
@@ -27,6 +28,7 @@ export default function NavBar() {
       <nav className='page-fixed-width-root'>
         <ul className='navbar_list'>{links}</ul>
       </nav>
+      <ThemeToggle />
     </div>
   );
 }
