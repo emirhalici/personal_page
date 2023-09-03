@@ -1,7 +1,8 @@
 body.dark-mode {
   --background: rgb(24, 24, 27);
   --accent-foreground: rgb(188, 194, 216);
-  --accent-background: rgb(48, 48, 59);
+  --accent-background: hsl(240, 10%, 21%);
+  --background-variant: var(--accent-background);
 
   --text-title: rgb(250, 250, 250);
   --text-subtitle: hsl(227, 5%, 65%);
@@ -31,7 +32,7 @@ body.dark-mode {
   --text-link-url-hover: hsl(228, 16%, 70%);
   --text-link-url-active: var(--text-link-url);
 
-  --social-background: var(--accent-background);
+  --social-background: var(--background-variant);
   --social-foreground: var(--accent-foreground);
   --social-shadow: transparent;
 
@@ -44,4 +45,8 @@ body.dark-mode {
   --anchor-hover-foreground: var(--accent-background);
   --anchor-active-background: var(--accent-foreground);
   --anchor-active-foreground: var(--accent-background);
+
+  --theme-toggle-background: var(--background-variant);
+  --theme-toggle-icon-foreground: var(--accent-foreground);
+  --theme-toggle-icon-background: var(--accent-background);
 }
