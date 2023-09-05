@@ -26,9 +26,8 @@ export default function NavBar() {
   return (
     <div className='row-flex margin-vertical-high'>
       <nav className='page-fixed-width-root'>
-        <ul className='navbar_list'>{links}</ul>
+        <ul className='navbar_list '>{links}</ul>
       </nav>
-      <ThemeToggle />
     </div>
   );
 }
