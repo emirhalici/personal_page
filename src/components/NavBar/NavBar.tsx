@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 import { allRoutes } from '~/constants/RouteNames';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { PropsWithChildren } from 'react';
 
 export default function NavBar() {
