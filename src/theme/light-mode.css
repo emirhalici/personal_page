@@ -2,6 +2,7 @@ body.light-mode {
   --background: rgb(235, 235, 235);
   --accent-foreground: hsl(227, 30%, 47%);
   --accent-background: rgb(188, 194, 216);
+  --background-variant: hsl(227, 10%, 95%);
 
   --text-title: rgb(56, 65, 75);
   --text-subtitle: hsl(227, 5%, 40%);
@@ -31,7 +32,7 @@ body.light-mode {
   --text-link-url-hover: hsl(227, 30%, 20%);
   --text-link-url-active: var(--text-link-url);
 
-  --social-background: hsl(227, 10%, 95%);
+  --social-background: var(--background-variant);
   --social-foreground: var(--accent-foreground);
   --social-shadow: var(--card-background);
 
@@ -44,4 +45,8 @@ body.light-mode {
   --anchor-hover-foreground: var(--accent-background);
   --anchor-active-background: var(--accent-foreground);
   --anchor-active-foreground: var(--accent-background);
+
+  --theme-toggle-background: var(--background-variant);
+  --theme-toggle-icon-foreground: var(--accent-foreground);
+  --theme-toggle-icon-background: white;
 }
