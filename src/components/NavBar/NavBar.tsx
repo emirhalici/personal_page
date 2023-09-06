@@ -31,14 +31,15 @@ export default function NavBar() {
   );
 }
 
-function dartDateFormatterUrl(): string {
+const dartDateFormatterUrl = () => {
   const currentUrl = window.location;
-  if (['emir.bio', 'emirhalici.com'].includes(currentUrl.hostname)) {
+  const deployedHostnames = ['emir.bio', 'www.emir.bio', 'emirhalici.com', 'www.emirhalici.com'];
+  if (deployedHostnames.includes(currentUrl.hostname)) {
     return `${currentUrl.protocol}//dartdateformatter.${currentUrl.host}`;
   } else {
     return 'https://dartdateformatter.vercel.app/';
   }
-}
+};
 
 type NavButtonProps = {
   path: string;
