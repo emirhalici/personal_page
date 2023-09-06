@@ -32,10 +32,12 @@ export default function NavBar() {
 }
 
 const dartDateFormatterUrl = () => {
-  const currentUrl = window.location;
-  const deployedHostnames = ['emir.bio', 'www.emir.bio', 'emirhalici.com', 'www.emirhalici.com'];
-  if (deployedHostnames.includes(currentUrl.hostname)) {
-    return `${currentUrl.protocol}//dartdateformatter.${currentUrl.host}`;
+  const url = window.location;
+  if (['www.emirhalici.com', 'www.emir.bio'].includes(url.hostname)) {
+    const [_www, ...rest] = url.hostname.split('.');
+    return `${url.protocol}//dartdateformatter.${rest.join('.')}`;
+  } else if (['emir.bio', 'emirhalici.com'].includes(url.hostname)) {
+    return `${url.protocol}//dartdateformatter.${url.host}`;
   } else {
     return 'https://dartdateformatter.vercel.app/';
   }
