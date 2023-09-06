@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import LinksPage from './pages/LinksPage/LinksPage';
 import { ThemeContextProvider } from './theme/ThemeContext';
 import { useThemeState } from './theme/useTheme';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 
 export default function App() {
   const [isDarkMode, themeState, setThemeState] = useThemeState();
@@ -21,6 +22,9 @@ export default function App() {
     >
       <div className='app-root'>
         <NavBar />
+        <div className='theme-toggle-container'>
+          <ThemeToggle />
+        </div>
         <div className='flex-1'>
           <Routes>
             <Route path={routeNames.root.path} element={<HomePage />} />
