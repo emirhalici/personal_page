@@ -17,7 +17,7 @@ export default function NavBar() {
   });
 
   links.push(
-    <NavButton path={'https://dartdateformatter.vercel.app/'} isActive={false} openInNewTab={true}>
+    <NavButton path={dartDateFormatterUrl()} isActive={false} openInNewTab={true}>
       Dart Date Formatter
     </NavButton>,
   );
@@ -29,6 +29,15 @@ export default function NavBar() {
       </nav>
     </div>
   );
+}
+
+function dartDateFormatterUrl(): string {
+  const currentUrl = window.location;
+  if (['emir.bio', 'emirhalici.com'].includes(currentUrl.hostname)) {
+    return `${currentUrl.protocol}//dartdateformatter.${currentUrl.host}`;
+  } else {
+    return 'https://dartdateformatter.vercel.app/';
+  }
 }
 
 type NavButtonProps = {
